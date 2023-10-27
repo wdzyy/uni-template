@@ -89,20 +89,6 @@
 
 ## 现在可以试试!
 
-### GitHub 模板
-
-[使用这个模板创建仓库](https://github.com/ares-chang/uni-vitesse/generate).
-
-### 克隆到本地
-
-如果您更喜欢使用更干净的 git 历史记录手动执行此操作
-
-```bash
-npx degit ares-chang/uni-vitesse my-uni-app
-cd my-uni-app
-pnpm i # 如果你没装过 pnpm, 可以先运行: npm install -g pnpm
-```
-
 ### 检查清单
 
 当您使用此模板时，请尝试按照清单正确更新您的信息
