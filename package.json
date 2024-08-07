@@ -41,7 +41,8 @@
     "lint": "eslint .",
     "test": "vitest",
     "preinstall": "npx only-allow pnpm",
-    "postinstall": "npx simple-git-hooks"
+    "postinstall": "npx simple-git-hooks",
+    "update:uni": "npx @dcloudio/uvm@latest"
   },
   "dependencies": {
     "@dcloudio/uni-app": "3.0.0-4020420240722002",
