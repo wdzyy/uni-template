@@ -1,28 +1,10 @@
 <script setup lang="ts">
-const name = $ref('')
 </script>
 
 <template>
-  <div>
-    <ZLogo />
-
-    <div py-4 />
-
-    <ZInput
-      v-model:value="name"
-      placeholder="What's your name?"
-    />
-
-    <div>
-      <button
-        m-3 text-sm btn
-        :disabled="!name"
-        @click="router.push(`/pages/hi?name=${name}`)"
-      >
-        Go
-      </button>
-    </div>
-  </div>
+  <Card class="flex items-center justify-start">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium aut error eos odit enim dolores repellendus officiis accusamus non voluptatum! Magnam odit tenetur fugiat itaque aliquam dolor ex, voluptatibus maiores!
+  </Card>
 </template>
 
 <route lang="yaml">
