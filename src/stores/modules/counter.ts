@@ -11,6 +11,6 @@ export const useCounterStore = defineStore({
     },
     dec() {
       this.count--
-    }
+    },
   },
 })

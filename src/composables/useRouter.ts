@@ -48,8 +48,8 @@ export declare type RouterLocationRaw =
   string
   | RouterLocationMixtureRaw<
       RouteLocationOptions & LocationUniAppParams,
-      RouterLocationRequiredOnly
-    >
+    RouterLocationRequiredOnly
+  >
 
 /**
  * Router 跳转参数选项
