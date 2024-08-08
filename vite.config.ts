@@ -3,7 +3,6 @@
 import { resolve } from 'node:path'
 import { defineConfig } from 'vite'
 import uni from '@dcloudio/vite-plugin-uni'
-import Unocss from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import UniPages from '@uni-helper/vite-plugin-uni-pages'
@@ -11,7 +10,8 @@ import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
 import VueDevTools from 'vite-plugin-vue-devtools'
 import ReactivityTransform from '@vue-macros/reactivity-transform/vite'
 
-import vueJsx from '@vitejs/plugin-vue-jsx'// 将px转换为vw的工具包
+import vueJsx from '@vitejs/plugin-vue-jsx'
+// 将px转换为vw的工具包
 import pxToViewport from 'postcss-px-to-viewport-8-plugin'
 
 const vw = pxToViewport({
@@ -30,7 +30,8 @@ const vw = pxToViewport({
 })
 
 // https://vitejs.dev/config/
-export default defineConfig(() => {
+export default defineConfig(async () => {
+  const Unocss = (await import('unocss/vite')).default
   return {
     resolve: {
       alias: {
